@@ -40,21 +40,15 @@ get:
         - read:users
     - api_key: []
   responses:
-    '200':
+    "200":
       description: Success
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/User.yaml'
+            $ref: "../components/schemas/User.yaml"
           example:
-            username: 'user1'
-            email: 'user@example.com'
-    '403':
-      description: Forbidden
-      $ref: ../components/responses/Problem.yaml
-    '404':
-      description: User not found
-      $ref: ../components/responses/Problem.yaml
+            username: "user1"
+            email: "user@example.com"
 put:
   tags:
     - User
@@ -70,32 +64,26 @@ put:
         type: string
   security:
     - main_auth:
-        - 'write:users'
+        - "write:users"
   requestBody:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/User.yaml'
+          $ref: "../components/schemas/User.yaml"
       application/xml:
         schema:
-          $ref: '../components/schemas/User.yaml'
+          $ref: "../components/schemas/User.yaml"
     description: Updated user object
     required: true
   responses:
-    '200':
+    "200":
       description: Successfully updated the user profile
       content:
         application/json:
           example:
             status: 200
             message: OK
-    '400':
-      description: Invalid username supplied
-      $ref: ../components/responses/Problem.yaml
-    '404':
-      description: User not found
-      $ref: ../components/responses/Problem.yaml
-    '405':
+    "405":
       description: Method not allowed
       content:
         application/json:
@@ -114,7 +102,7 @@ delete:
       required: false
       schema:
         type: string
-        example: 'Bearer <TOKEN>'
+        example: "Bearer <TOKEN>"
     - name: username
       in: path
       description: "The name of the user profile to be **deleted**."
@@ -123,14 +111,14 @@ delete:
       schema:
         type: string
   responses:
-    '200':
+    "200":
       description: Successfully deleted a user
-    '400':
+    "400":
       description: Invalid username provided
-    '404':
+    "404":
       description: User not found
   security:
     - main_auth:
-        - 'read:users'
-        - 'write:users'
+        - "read:users"
+        - "write:users"
     - api_key: []
