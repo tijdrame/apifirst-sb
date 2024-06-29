@@ -11,7 +11,7 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   x-logo:
-    url: 'https://redocly.github.io/openapi-template/logo.png'
+    url: "https://redocly.github.io/openapi-template/logo.png"
     altText: OpenAPI example logo
   description: >
     This is an **example** API to demonstrate features of the OpenAPI
@@ -19,22 +19,22 @@ info:
 
     # Introduction
 
-    
+
     guesswork in calling the service.
 externalDocs:
   description: "Find out how to create a GitHub repo for your OpenAPI definition."
-  url: 'https://github.com/Redocly/create-openapi-repo'
-#tags:
-#  - name: Echo
-#    description: "Example echo operations."
-#  - name: User
-#    description: "Example actions on user accounts."
-#  - name: Admin
-#    description: "Example operations reserved for administrators."
-#  - name: Info
-#    description: "Example operations for retrieving information."
-#  - name: Tag
-#    description: "This is a tag description."
+  url: "https://github.com/Redocly/create-openapi-repo"
+tags:
+  - name: Echo
+    description: "Example echo operations."
+  - name: User
+    description: "Example actions on user accounts."
+  - name: Admin
+    description: "Example operations reserved for administrators."
+  - name: Info
+    description: "Example operations for retrieving information."
+  - name: Tag
+    description: "This is a tag description."
 #x-tagGroups:
 #  - name: General
 #    tags:
@@ -52,8 +52,8 @@ servers:
         description: Your tenant id
   - url: https://example.com/api/v1
 paths:
-  '/users/{username}':
-    $ref: 'paths/users_{username}.yaml'
+  "/users/{username}":
+    $ref: "paths/users_{username}.yaml"
 #  '/user':
 #    $ref: 'paths/user.yaml'
 #  '/user/list':
@@ -73,8 +73,8 @@ components:
         implicit:
           authorizationUrl: http://example.com/api/oauth/dialog
           scopes:
-            'read:users': read user info
-            'write:users': modify or remove users
+            "read:users": read user info
+            "write:users": modify or remove users
     api_key:
       description: "Example description text of the API key scheme."
       type: apiKey
@@ -95,9 +95,9 @@ webhooks:
         content:
           application/json:
             schema:
-              $ref: 'components/schemas/User.yaml'
+              $ref: "components/schemas/User.yaml"
       responses:
-        '200':
+        "200":
           description: "Successfully retrieved information about a new user."
       security:
         - api_key: []
