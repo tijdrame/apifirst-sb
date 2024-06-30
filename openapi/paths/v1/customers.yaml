@@ -17,3 +17,5 @@ get:
         application/json:
           schema:
             $ref: "../../components/schemas/Problem.yaml"
+  security:
+    - basic_auth: []

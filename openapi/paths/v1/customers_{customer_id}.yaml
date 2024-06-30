@@ -9,7 +9,7 @@ get:
       in: path
       description: The ID of the customer to reetrieve
       required: true
-      scheme:
+      schema:
         type: string
         format: uuid
   responses:
@@ -27,3 +27,5 @@ get:
         application/json:
           schema:
             $ref: "../../components/schemas/Problem.yaml"
+  security:
+    - basic_auth: []

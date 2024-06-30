@@ -50,8 +50,6 @@ servers:
 paths:
   "/users/{username}":
     $ref: "paths/users_{username}.yaml"
-  "/users2/{username}":
-    $ref: "paths/users_{username}.yaml"
   "/v1/customers":
     $ref: "paths/v1/customers.yaml"
   "/v1/customers/{customer_id}":
