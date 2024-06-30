@@ -41,7 +41,7 @@ paths:
   "/v1/products":
     $ref: "paths/v1/products.yaml"
   "/v1/products/{products_id}":
-    $ref: "paths/v1/products_{products_id}.yaml"
+    $ref: "paths/v1/products_{product_id}.yaml"
 
 components:
   securitySchemes:
