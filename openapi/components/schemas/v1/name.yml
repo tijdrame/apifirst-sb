@@ -3,14 +3,14 @@ properties:
   prefix:
     type: string
     description: Name prefix
-    fisrtName:
-      type: string
-      description: The fisrt name of the customer
-      example: Tidiane
-    lastName:
-      type: string
-      description: The last name of the customer
-      example: Dramé
-    suffix:
-      type: string
-      description: Name suffix
+  fisrtName:
+    type: string
+    description: The fisrt name of the customer
+    example: Tidiane
+  lastName:
+    type: string
+    description: The last name of the customer
+    example: Dramé
+  suffix:
+    type: string
+    description: Name suffix
