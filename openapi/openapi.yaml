@@ -23,10 +23,8 @@ externalDocs:
 tags:
   - name: Customer
     description: "Customer operations."
-  - name: User
-    description: "Example actions on user accounts."
-  - name: Tag
-    description: "This is a tag description."
+  - name: Product
+    description: "Product operations."
 
 servers:
   - url: https://{tenant}/api/v1
@@ -40,6 +38,10 @@ paths:
     $ref: "paths/v1/customers.yaml"
   "/v1/customers/{customer_id}":
     $ref: "paths/v1/customers_{customer_id}.yaml"
+  "/v1/products":
+    $ref: "paths/v1/products.yaml"
+  "/v1/products/{products_id}":
+    $ref: "paths/v1/products_{products_id}.yaml"
 
 components:
   securitySchemes:

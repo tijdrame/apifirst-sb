@@ -1,0 +1,20 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: Unique identifier representing a specific product
+  description:
+    type: string
+    example: Phone
+  dimensions:
+    type: string
+  categories:
+    type: array
+    items: string
+  images:
+    type: string
+  price:
+    type: number
+  cost:
+    type: number
