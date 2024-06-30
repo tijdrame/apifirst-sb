@@ -7,15 +7,19 @@ properties:
   description:
     type: string
     example: Phone
-  dimensions:
-    type: string
+  dimentions:
+    $ref: dimentions.yaml
   categories:
     type: array
     items:
-      type: string
+      $ref: category.yaml
   images:
-    type: string
+    type: array
+    items:
+      $ref: image.yaml
   price:
-    type: number
+    type: string
+    pattern: ^-?(?:0|[1-9]\d{0,2}(?:,?\d{3})*)(?:\.\d+)?$
   cost:
-    type: number
+    type: string
+    pattern: ^-?(?:0|[1-9]\d{0,2}(?:,?\d{3})*)(?:\.\d+)?$
