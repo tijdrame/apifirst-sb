@@ -40,7 +40,7 @@ paths:
     $ref: "paths/v1/customers_{customer_id}.yaml"
   "/v1/products":
     $ref: "paths/v1/products.yaml"
-  "/v1/products/{products_id}":
+  "/v1/products/{product_id}":
     $ref: "paths/v1/products_{product_id}.yaml"
 
 components:
