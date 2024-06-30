@@ -1,0 +1,23 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: Unique identifier representing a specific customer
+  name:
+    $ref: "name.yml"
+    type: string
+    description: The fisrt name of the customer
+    example: Tidiane
+  shipToAddress:
+    $ref: address.yaml
+  billToAddress:
+    $ref: address.yaml
+    email:
+      type: string
+    phone:
+      type: string
+    paymentMethods:
+      type: array
+      items:
+        $ref: payment_methods.yaml
