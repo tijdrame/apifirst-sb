@@ -11,7 +11,8 @@ properties:
     type: string
   categories:
     type: array
-    items: string
+    items:
+      type: string
   images:
     type: string
   price:
