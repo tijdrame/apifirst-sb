@@ -20,9 +20,16 @@ properties:
     maximum: 10000
     example: 2
   dateCreated:
-    $ref: ../common/iso_timestamp.yaml
+    #$ref: ../common/iso_timestamp.yaml
+    type: string
+    format: date-time
+    description: The date the image was created
+    readOnly: true
   dateUpdated:
-    $ref: ../common/iso_timestamp.yaml
+    type: string
+    format: date-time
+    description: The date the image was updated
+    readOnly: true
 required:
   - product
   - orderQuantity
