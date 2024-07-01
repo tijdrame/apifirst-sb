@@ -24,8 +24,10 @@ properties:
     example: 123
   dateCreated:
     $ref: ../common/iso_timestamp.yaml
+    readOnly: true
   dateUpdated:
     $ref: ../common/iso_timestamp.yaml
+    readOnly: true
 required:
   - displayName
   - cardNumber

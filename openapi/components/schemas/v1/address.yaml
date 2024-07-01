@@ -4,6 +4,7 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific customer
+    readOnly: true
   addressLine1:
     type: string
     description: Address Line 1
@@ -11,7 +12,9 @@ properties:
     maxLength: 100
     example: 123 %ain Street
   addressLine2:
-    type: string
+    type:
+      - string
+      - "null"
     description: Address Line 2
     minLength: 3
     maxLength: 100
@@ -33,6 +36,12 @@ properties:
     minLength: 5
     maxLength: 10
     example: 33701
+  dateCreated:
+    $ref: ../common/iso_timestamp.yaml
+    readOnly: true
+  dateUpdated:
+    $ref: ../common/iso_timestamp.yaml
+    readOnly: true
 required:
   - addressLine1
   - city
