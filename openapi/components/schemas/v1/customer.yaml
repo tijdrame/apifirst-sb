@@ -29,10 +29,8 @@ properties:
       $ref: payment_method.yaml
   dateCreated:
     $ref: ../common/iso_timestamp.yaml
-    readOnly: true
   dateUpdated:
     $ref: ../common/iso_timestamp.yaml
-    readOnly: true
 required:
   - name
   - billToAddress
