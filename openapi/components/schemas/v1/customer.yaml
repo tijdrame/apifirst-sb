@@ -12,12 +12,14 @@ properties:
   billToAddress:
     $ref: address.yaml
   email:
-    type: string
+    type: ["null", string]
     maxLength: 255
     minLength: 3
     example: tijdrame@gmail.com
   phone:
-    type: string
+    type:
+      - string
+      - "null"
     maxLength: 15
     minLength: 7
     example: 800-555-1212
@@ -25,6 +27,12 @@ properties:
     type: array
     items:
       $ref: payment_method.yaml
+  dateCreated:
+    $ref: ../common/iso_timestamp.yaml
+    readOnly: true
+  dateUpdated:
+    $ref: ../common/iso_timestamp.yaml
+    readOnly: true
 required:
   - name
   - billToAddress
