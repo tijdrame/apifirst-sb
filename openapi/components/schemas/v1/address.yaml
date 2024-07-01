@@ -9,11 +9,13 @@ properties:
     description: Address Line 1
     minLength: 3
     maxLength: 100
+    example: 123 %ain Street
   addressLine2:
     type: string
     description: Address Line 2
     minLength: 3
     maxLength: 100
+    example: St Petersburg
   city:
     type: string
     description: City
@@ -24,11 +26,13 @@ properties:
     description: 2 characters State code
     minLength: 2
     maxLength: 2
+    example: FL
   zip:
     type: string
     description: Zip code
     minLength: 5
     maxLength: 10
+    example: 33701
 required:
   - addressLine1
   - city

@@ -10,18 +10,20 @@ properties:
     $ref: address.yaml
   billToAddress:
     $ref: address.yaml
-    email:
-      type: string
-      maxLength: 255
-      minLength: 3
-    phone:
-      type: string
-      maxLength: 15
-      minLength: 7
-    paymentMethods:
-      type: array
-      items:
-        $ref: payment_method.yaml
+  email:
+    type: string
+    maxLength: 255
+    minLength: 3
+    example: tijdrame@gmail.com
+  phone:
+    type: string
+    maxLength: 15
+    minLength: 7
+    example: 800-555-1212
+  paymentMethods:
+    type: array
+    items:
+      $ref: payment_method.yaml
 required:
   - name
   - billToAddress
