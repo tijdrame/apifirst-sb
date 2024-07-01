@@ -6,9 +6,6 @@ properties:
     description: Unique identifier representing a specific customer
   name:
     $ref: "name.yml"
-    type: string
-    description: The fisrt name of the customer
-    example: Tidiane
   shipToAddress:
     $ref: address.yaml
   billToAddress:
