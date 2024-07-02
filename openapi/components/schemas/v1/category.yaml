@@ -4,17 +4,21 @@ properties:
     type: string
     format: uuid
     description: The unique identifier of the category
+    readOnly: true
   category:
     type: string
+    minLength: 3
+    maxLength: 25
     description: The category of the product
   description:
     type: string
     description: The description of the category
+    minLength: 3
+    maxLength: 255
   dateCreated:
-    type: string
-    format: date-time
-    description: The date the image was created
+    $ref: ../common/iso_timestamp.yaml
   dateUpdated:
-    type: string
-    format: date-time
-    description: The date the image was updated
+    $ref: ../common/iso_timestamp.yaml
+required:
+  - category
+  - description
