@@ -6,7 +6,7 @@ properties:
     description: Unique identifier representing a specific customer
     readOnly: true
   name:
-    $ref: "name.yml"
+    $ref: "name.yaml"
   shipToAddress:
     $ref: address.yaml
   billToAddress:
