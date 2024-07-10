@@ -13,11 +13,10 @@ properties:
     maxLength: 500
     example: https://www.unitygroup.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/08/java-1024x574.png.webp
   altText:
-    type:
-      - string
-      - "null"
+    type: string
     minLength: 3
     maxLength: 255
+    nullable: true
   dateCreated:
     $ref: ../common/iso_timestamp.yaml
   dateUpdated:

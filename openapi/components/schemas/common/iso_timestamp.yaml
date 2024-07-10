@@ -1,5 +1,6 @@
-type: ["null", string]
+type: string
 format: date-time
+nullable: true
 description:
   ISO 8601 Timestamp. Date Created and Date Updated are system managed values,
   should not be sent in request payloads - will be ignored.

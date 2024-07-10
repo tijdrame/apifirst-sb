@@ -12,9 +12,10 @@ properties:
     enum: [NEW, HOLD, SHIPPED, DELIVERED, CLOSED]
     default: NEW
   shipmentInfo:
-    type: ["null", string]
+    type: string
     minLength: 1
     maxLength: 255
+    nullable: true
   orderLines:
     type: array
     items:
