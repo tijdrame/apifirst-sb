@@ -12,13 +12,12 @@ properties:
     maxLength: 100
     example: 123 %ain Street
   addressLine2:
-    type:
-      - string
-      - "null"
+    type: string
     description: Address Line 2
     minLength: 3
     maxLength: 100
     example: St Petersburg
+    nullable: true
   city:
     type: string
     description: City
