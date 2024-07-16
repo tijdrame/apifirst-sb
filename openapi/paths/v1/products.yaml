@@ -17,5 +17,31 @@ get:
         application/json:
           schema:
             $ref: "../../components/schemas/Problem.yaml"
+post:
+  tags:
+    - Products
+  summary: Create a new Product
+  description: Create a new Product
+  operationId: createProduct
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../../components/schemas/v1/product.yaml"
+  responses:
+    "201":
+      description: Created
+      headers:
+        Location:
+          description: Location of the new resource
+          schema:
+            type: string
+            example: "/v1/products/869913ba-eda3-4729-8502-a9651dac8bbd"
+    "400":
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/schemas/Problem.yaml"
   security:
     - basic_auth: []
