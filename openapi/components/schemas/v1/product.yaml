@@ -4,6 +4,8 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific product
+    readOnly: true
+    nullable: true
   description:
     type: string
     example: Phone
