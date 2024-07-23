@@ -26,6 +26,7 @@ properties:
     nullable: true
   paymentMethods:
     type: array
+    nullable: true
     items:
       $ref: payment_method.yaml
   dateCreated:
