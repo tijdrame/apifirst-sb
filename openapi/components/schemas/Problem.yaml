@@ -1,5 +1,5 @@
 type: object
-additionalProperties: true
+additionalProperties: false
 minProperties: 1
 description: >-
   The Problem Details JSON Object
